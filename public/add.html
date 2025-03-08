@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Add User</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/add">Add User</a>
+    <a href="/delete">Delete User</a>
+    <a href="/update">Update User</a>
+  </div>
+  <div class="container">
+    <h1>Add User</h1>
+    <form method="POST" action="/add">
+      <label>ID:</label>
+      <input type="number" name="id" required /><br/>
+      <label>Name:</label>
+      <input type="text" name="name" required /><br/>
+      <label>Age:</label>
+      <input type="number" name="age" required /><br/>
+      <label>Gmail:</label>
+      <input type="email" name="gmail" required /><br/><br/>
+      <input type="submit" value="Add User" />
+    </form>
+  </div>
+</body>
+</html>
